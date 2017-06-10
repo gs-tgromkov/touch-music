@@ -140,7 +140,7 @@
       "allowArrowFunctions": true
     }],
     "react/jsx-no-target-blank": 1,
-    "react/jsx-pascal-case": 1,
+    "react/jsx-pascal-case": 0,
     "react/jsx-tag-spacing": [1, {
       "closingSlash": "never",
       "beforeSelfClosing": "always",

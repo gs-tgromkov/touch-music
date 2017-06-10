@@ -1,26 +1,129 @@
+@keyframes a-click {
+  33% {
+    background-image: url('../../../assets/games/ymca/pngs/A_1.png');
+  }
+
+  66% {
+    background-image: url('../../../assets/games/ymca/pngs/A_2.png');
+  }
+
+  100% {
+    background-image: url('../../../assets/games/ymca/pngs/A_3.png');
+  }
+}
+@keyframes y-click {
+  33% {
+    background-image: url('../../../assets/games/ymca/pngs/Y_1.png');
+  }
+
+  66% {
+    background-image: url('../../../assets/games/ymca/pngs/Y_2.png');
+  }
+
+  100% {
+    background-image: url('../../../assets/games/ymca/pngs/Y_3.png');
+  }
+}
+@keyframes c-click {
+  33% {
+    background-image: url('../../../assets/games/ymca/pngs/C_1.png');
+  }
+
+  66% {
+    background-image: url('../../../assets/games/ymca/pngs/C_2.png');
+  }
+
+  100% {
+    background-image: url('../../../assets/games/ymca/pngs/C_3.png');
+  }
+}
+@keyframes m-click {
+  25% {
+    background-image: url('../../../assets/games/ymca/pngs/M_1.png');
+  }
+
+  50% {
+    background-image: url('../../../assets/games/ymca/pngs/M_2.png');
+  }
+
+  75% {
+    background-image: url('../../../assets/games/ymca/pngs/M_3.png');
+  }
+
+  100% {
+    background-image: url('../../../assets/games/ymca/pngs/M_4.png');
+  }
+}
+
 body {
-  background: url('../../../assets/images/BG-YMCA.png') no-repeat;
+  background: url('../../../assets/images/BG-YMCA.png');
   background-size: cover;
 }
 
 .ymca {
   width: 100%;
   height: 100%;
+  margin-top: 70px;
 
   .ymca--upper,
   .ymca--lower {
     display: flex;
-    height: 50%;
+    justify-content: center;
 
-    &__y,
-    &__m,
-    &__c,
-    &__a {
-      width: 50%;
+    .a {
+      background-image: url('../../../assets/games/ymca/pngs/A_0.png');
+      background-repeat: no-repeat;
+      width: 357px;
+      height: 286px;
+
+      &.clicked {
+        animation-name: a-click;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
     }
 
-    .frames {
-      transform: scale(0.5);
+    .m {
+      background-image: url('../../../assets/games/ymca/pngs/M_0.png');
+      background-repeat: no-repeat;
+      width: 357px;
+      height: 286px;
+
+      &.clicked {
+        animation-name: m-click;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .y {
+      background-image: url('../../../assets/games/ymca/pngs/Y_0.png');
+      background-repeat: no-repeat;
+      width: 357px;
+      height: 286px;
+
+      &.clicked {
+        animation-name: y-click;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .c {
+      background-image: url('../../../assets/games/ymca/pngs/C_0.png');
+      background-repeat: no-repeat;
+      width: 357px;
+      height: 286px;
+
+      &.clicked {
+        animation-name: c-click;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
     }
   }
 }

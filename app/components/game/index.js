@@ -2,16 +2,16 @@ import './game.scss';
 
 import React from 'react';
 
-import GAMES from 'assets/games.json'
+import GAMES from 'assets/games.json';
 import YMCA from './ymca';
 
 export default class Game extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       game: this.props.game || 'ymca'
-    }
+    };
   }
 
   tapToPlay() {
@@ -21,7 +21,7 @@ export default class Game extends React.Component {
           game={GAMES[this.state.game]}
         />
       </div>
-    )
+    );
   }
 
   render() {
