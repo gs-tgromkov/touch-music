@@ -1,0 +1,8 @@
+{
+  "ymca": {
+    "previewTime": 2000,
+    "previewVideo": "",
+    "time": 2000,
+    "eachPress": [500, 500, 500, 500]
+  }
+}

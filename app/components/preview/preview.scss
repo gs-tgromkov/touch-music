@@ -1,0 +1,14 @@
+@import 'assets/styles/colors';
+
+body {
+  background: url('../../assets/images/BG-Halleluia.png') no-repeat;
+  background-size: cover;
+}
+
+.root {
+  .root-heading {
+    color: #FAFAFA;
+    font-size: 4rem;
+    text-shadow: 1px 1px 4px #222;
+  }
+}
